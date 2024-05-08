@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header">
+            <img src="multimedia/icons/library-outline.svg" class="icon">
+            <button id="plus" class="icon"></button>
+        </div>
+
+        <div class="main-content">
+            <div class="library-container">
+                <dialog>
+                    <form method="dialog">
+                        <div>
+                            <label for="get-title">Title</label>
+                            <input type="text" name="title" id="get-title" required>
+                        </div>
+
+                        <div>
+                            <label for="get-author">Author</label>
+                            <input type="text" name="author" id="get-author"required>
+                        </div>
+
+                        <div>
+                            <label for="get-pages">Pages</label>
+                            <input type="number" name="pages" id="get-pages"required>
+                        </div>
+
+                        <div id="checkbox">
+                            <label for="get-read">Have you already read this book?</label>
+                            <input type="checkbox" name="read" id="get-read">
+                        </div>
+
+                        <button type="submit">Submit Book!</button>
+                    </form>
+
+                    <button id="close">x</button>
+                </dialog>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
