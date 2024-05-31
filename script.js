@@ -66,7 +66,7 @@ function createBookCard(book) {
     const arrayPosition = myLibrary.length - 1;
     // Create a book container
     const newBook = document.createElement(`div`);
-    newBook.classList.add(`bookContainer`)
+    newBook.classList.add(`bookContainer`);
     libraryContainer.appendChild(newBook);
     // Add book elements
     const title = document.createElement(`p`);
@@ -107,9 +107,9 @@ function createBookCard(book) {
     newBook.appendChild(deleteBtn)
 
     deleteBtn.addEventListener(`click`, () => {
-        deleteAbook(title)
-        // newBook.innerHTML = ``;
-        // newBook.remove()
+        deleteAbook(title);
+        newBook.remove();
+
     })
     
 }
@@ -117,7 +117,7 @@ function createBookCard(book) {
 function deleteAbook(title) {
     let index = myLibrary.map(myLibrary => myLibrary.title).indexOf(`${title.textContent}`)
     myLibrary.splice(index, 1);
-
+    const container = document.querySelector(`.library-container`);
 }
 
 
